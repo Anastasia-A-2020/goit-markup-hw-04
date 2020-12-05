@@ -164,8 +164,9 @@ header .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2F303A;
-} /*фон добавила, чтоб видно было надпись*/
+    background-color: #C4C4C4;
+} 
+
 .hero .conteiner {
     box-sizing: border-box;
     text-align: center;
@@ -204,6 +205,20 @@ header .logo {
     color: var(--color-lead);
 }
 
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../images/bg-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
 /*=============== END HERO ===============*/
 
 /*=============== DISCRIPTION ===============*/
@@ -218,7 +233,7 @@ header .logo {
     padding-bottom: 94px;
 }
 
-.advantage__list-image {
+.advantage__list-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,6 +242,7 @@ header .logo {
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
+    padding: 25px 100px;
 }
 
 .advantage__list-item:not(:last-child) {
