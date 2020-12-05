@@ -45,7 +45,6 @@ p {
 img {
     display: block;
     min-width: 100%;
-    height: auto;
 }
 
 .nav__list-item:hover,
@@ -259,9 +258,6 @@ header .logo {
     display: flex;
 }
 
-.activities__list-item {
-   /* margin-top: 50px;*/
-}
 .activities__list-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -282,6 +278,7 @@ header .logo {
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background: #FFFFFF;
 }
 
 .team__list-item:not(:last-child) {
@@ -298,8 +295,6 @@ header .logo {
     line-height: 1.188;
     letter-spacing: 0.03em;
     color: var(--color-title);
-    /*padding-top: 30px;*/
-    /*padding-bottom: 10px;*/
 }
 .team__list-item-position {
     font-weight: 400;
@@ -314,6 +309,7 @@ header .logo {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    margin: 0;
     padding-top: 16px;
 }
 
@@ -323,13 +319,20 @@ header .logo {
     align-items: center;
     width: 44px;
     height: 44px;
-    background-color: var(--color-lead);
     border-radius: 50%;
 }
 
-.social-link-icon {
-    width: 20px;
-    height: 20px;
+.social-list_link:hover,
+.social-list_link:focus {
+    background-color: #2196F3;
+}
+
+.social-list_link:hover .social-link-icon,
+.social-list_link:focus .social-link-icon {
+    fill: var(--color-lead);
+}
+
+.social-list_link {
     fill: #AFB1B8;
 }
 /*=============== END TEAM ===============*/
