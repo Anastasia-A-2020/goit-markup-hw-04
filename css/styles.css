@@ -79,7 +79,8 @@ img {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.header .conteiner {
+.header .conteiner,
+.footer .conteiner {
     display: flex;
     align-items: center;
 }
@@ -97,7 +98,8 @@ img {
 .team__list,
 .footer__contacts,
 .projects__buttons-list,
-.projects-list {
+.projects-list,
+.clients-list {
     list-style-type: none;
 }
 
@@ -210,7 +212,8 @@ header .logo {
    flex-wrap: wrap;
 }
 
-.advantage {
+.advantage,
+.clients {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -243,7 +246,8 @@ header .logo {
     padding-bottom: 94px;
 }
 
-.aboutus__title {
+.aboutus__title,
+.our__clients {
     display: flex;
     justify-content: center;
     font-weight: 700;
@@ -267,11 +271,11 @@ header .logo {
 .team {
     background-color: #F5F4FA;
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team__list{
-    display: flex;
-    padding-bottom: 94px;
+    display: flex; 
 }
 
 .team__list-item {
@@ -313,7 +317,8 @@ header .logo {
     padding-top: 16px;
 }
 
-.social-list_link {
+.social-list_link,
+.footer__contacts-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -323,8 +328,10 @@ header .logo {
 }
 
 .social-list_link:hover,
-.social-list_link:focus {
-    background-color: #2196F3;
+.social-list_link:focus,
+.footer__contacts-link:hover,
+.footer__contacts-link:focus {
+    background-color: var(--accent-color);
 }
 
 .social-list_link:hover .social-link-icon,
@@ -334,16 +341,48 @@ header .logo {
 
 .social-list_link {
     fill: #AFB1B8;
+    ;
 }
 /*=============== END TEAM ===============*/
 
+/*=============== CLIENTS ===============*/
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 90px;
+}
+
+.client-list-link:hover,
+.client-list-link:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.client-list-link-icon {
+    fill: currentColor;
+}
+
+/*=============== END CLIENTS ===============*/
+
 /*=============== FOOTER ===============*/
+/*.footer * {
+    outline: 2px solid tomato;
+}*/
 .footer {
     background-color: #2F303A;
-    /*фон добавила, чтоб видно было надпись*/
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
 .location {
     display: block;
     font-weight: 400;
@@ -366,10 +405,53 @@ header .logo {
     color: var(--color-description);
 }
 
+.footer__slogan {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size:14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    color: var(--color-lead);
+    text-transform: uppercase;
+}
+
+.footer__contacts-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 20px;
+}
+
 .footer__contact-item {
     padding-top: 9px;
 }
 
+.footer__info,
+.footer__contacts {
+    display: block;
+}
+
+.footer__contacts {
+    margin-left: 70px;
+}
+
+.footer__contacts-icon {
+    fill: var(--color-lead);
+}
+
+.footer__contacts-item {
+    display: flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer__contacts-item:not(:last-child) {
+    margin-right: 10px;
+}
 /*=============== END FOOTER ===============*/
 
 
