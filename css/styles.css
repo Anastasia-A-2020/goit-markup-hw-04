@@ -410,9 +410,6 @@ header .logo {
 /*=============== END CLIENTS ===============*/
 
 /*=============== FOOTER ===============*/
-/*.footer * {
-    outline: 2px solid tomato;
-}*/
 .footer {
     background-color: #2F303A;
     padding-top: 60px;
@@ -468,8 +465,8 @@ header .logo {
     display: block;
 }
 
-.footer__contacts {
-    margin-left: 70px;
+.footer__info {
+    margin-right: 70px;
 }
 
 .footer__contacts-icon {
