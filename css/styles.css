@@ -411,6 +411,11 @@ header .logo {
     fill: #AFB1B8;
 }
 
+.client-list-link:hover .client-list-link-icon,
+.client-list-link:focus .client-list-link-icon {
+    fill: var(--accent-color);
+}
+
 /*=============== END CLIENTS ===============*/
 
 /*=============== FOOTER ===============*/
