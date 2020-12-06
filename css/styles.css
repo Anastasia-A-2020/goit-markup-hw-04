@@ -47,12 +47,18 @@ img {
     min-width: 100%;
 }
 
+.nav__list-item-link:visited {
+    color:var(--color-description);
+}
+
 .nav__list-item:hover,
 .nav__list-item:focus,
 .address__tel:hover,
 .address__tel:focus,
 .address__mail:hover,
 .address__mail:focus,
+.nav__list-item-link:hover,
+.nav__list-item-link:focus,
 .footer__mail:hover,
 .footer__mail:focus,
 .footer__tel:hover,
