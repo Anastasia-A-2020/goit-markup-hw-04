@@ -56,13 +56,10 @@ img {
 .footer__mail:hover,
 .footer__mail:focus,
 .footer__tel:hover,
-.footer__tel:focus {
-    color: var(--accent-color);
-}
-
+.footer__tel:focus,
 .address__mail:hover .address__mail-icon,
 .address__mail:focus .address__mail-icon,
-..address__tel:focus .address__tel-icon,
+.address__tel:focus .address__tel-icon,
 .address__tel:focus .address__tel-icon {
     fill: var(--accent-color);
 }
@@ -156,7 +153,7 @@ header .logo {
     display: flex;
 }
 
-.nav__list-item-link, {
+.nav__list-item-link {
     text-decoration: none;
 }
 
@@ -194,11 +191,12 @@ header .logo {
     margin-bottom: 30px;
 }
 
-.button {
+.hero__button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
     color: var(--color-lead);
+    background-color: var(--accent-color);
     min-width: 200px;
     border-radius: 4px;
     padding: 10px 32px;
@@ -316,7 +314,10 @@ header .logo {
 
 .team__list-item {
     text-align: center;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 
+        0px 1px 3px rgba(0, 0, 0, 0.12), 
+        0px 1px 1px rgba(0, 0, 0, 0.14), 
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background: #FFFFFF;
 }
@@ -404,7 +405,7 @@ header .logo {
 }
 
 .client-list-link-icon {
-    fill: currentColor;
+    fill: #AFB1B8;
 }
 
 /*=============== END CLIENTS ===============*/
@@ -519,6 +520,7 @@ header .logo {
 .projects-list-item-border{
     border: 1px solid #EEEEEE;
     padding: 20px 24px;
+
 }
 .projects-list-item:hover,
 .projects-list-item:focus {
@@ -528,6 +530,7 @@ header .logo {
         1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
+
 .project__buttons-list-item:not(:last-child) {
     padding-right: 8px;
 }
